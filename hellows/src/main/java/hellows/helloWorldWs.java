@@ -9,7 +9,7 @@ public class helloWorldWs {
 	@WebMethod
 	public String sayhello()
 	{
-		return "hello bharathi";
+		return "hello bharathi...";
 		
 	}
 	
