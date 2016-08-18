@@ -10,9 +10,15 @@
 	<ref bean = "adBean"/>
 	</jaxrs:serviceBeans>
 	
+	<jaxrs:providers>
+	<ref bean="jacksonProvider"/>
+	</jaxrs:providers>
+	
 	</jaxrs:server>
 	
 	<bean id="adBean" class= "com.kamala.campaign.AdTest1.adServiceImpl">
 	</bean>
+	<bean id ="jacksonProvider" class="org.codehaus.jackson.jaxrs.JacksonJsonProvider" />
+
 	
 	</beans>
